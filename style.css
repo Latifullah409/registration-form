@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box
+}
+body {
+font-family: Arial, sans-serif;
+background-image: url('images/background-image.jpg');
+background-size: cover; /* Adjust the sizing of the background image */
+background-repeat: no-repeat; 
+min-height: 100vh; /* Ensure the whole viewport height is covered */
+margin: 0;
+}
+
+#registration-form {
+width: 600px;
+max-width: 600px;
+margin: 50px 20px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f7f7f7;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#form .error {
+color: red;
+font-size: 12px;
+}
+
+#passwordStrength {
+margin-top: 5px;
+}
+
+#passwordStrength.valid {
+font-size: 12px;
+}
+
+#form button[type="submit"] {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#form button[type="submit"]:disabled {
+background-color: #ccc;
+cursor: not-allowed;
+}
+
+#status {
+margin-top: 10px;
+text-align: center;
+}
+
+.valid {
+color: green;
+}
+
